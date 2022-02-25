@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var graph: emgGraph
     @ObservedObject var BLE: BLEManager
+    
     var body: some View {
         VStack {
             //This part is the graph. It's really just a plain path, but graphs with higher abstraction usually aren't great for realtime updates.
@@ -82,19 +83,20 @@ struct ContentView: View {
                 }.padding()
 
                 Spacer()
-
+                
                 VStack (spacing: 10) {
                     Button(action: {
-                        print("Start Advertising")
+                        graph.record()
                     }) {
-                        Text("Start Advertising")
+                        Text("Start Recording")
                     }
                     Button(action: {
-                        print("Stop Advertising")
+                        let file_content = graph.stop_recording_and_save()
                     }) {
-                        Text("Stop Advertising")
+                        Text("Stop Recording")
                     }
                 }.padding()
+
             }
             Spacer()
         }
