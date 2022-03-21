@@ -64,7 +64,7 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate {
     }
         
     func startScanning() {
-        let emgServiceCBUUID = CBUUID(string: "4028F84C-05C0-4181-843E-BDBEE6E1030D")
+        //let emgServiceCBUUID = CBUUID(string: "4028F84C-05C0-4181-843E-BDBEE6E1030D")
         print("startScanning")
         BLEPeripherals.removeAll()
         CBPeripherals.removeAll()
