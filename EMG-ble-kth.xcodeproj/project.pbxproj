@@ -39,6 +39,7 @@
 		9A2DD399272F15FC00C35CED /* emgGraphDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emgGraphDisplay.swift; sourceTree = "<group>"; };
 		9A2DD39B2730512C00C35CED /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BLEManager.swift; path = "EMG-ble-kth/BLEManager.swift"; sourceTree = "<group>"; };
 		9AAD3B19273A72920096E5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9AAFA96027E89E27006B94F3 /* EMG-ble-kth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EMG-ble-kth.entitlements"; sourceTree = "<group>"; };
 		9AD15E7C272C175A00649A46 /* EMG-ble-kth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EMG-ble-kth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD15E7F272C175A00649A46 /* EMG_ble_kthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMG_ble_kthApp.swift; sourceTree = "<group>"; };
 		9AD15E81272C175A00649A46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		9AD15E7E272C175A00649A46 /* EMG-ble-kth */ = {
 			isa = PBXGroup;
 			children = (
+				9AAFA96027E89E27006B94F3 /* EMG-ble-kth.entitlements */,
 				9AAD3B19273A72920096E5F1 /* Info.plist */,
 				9AD15E7F272C175A00649A46 /* EMG_ble_kthApp.swift */,
 				9AD15E81272C175A00649A46 /* ContentView.swift */,
@@ -426,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "EMG-ble-kth/EMG-ble-kth.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EMG-ble-kth/Preview Content\"";
@@ -447,6 +450,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "kth-flemingsberg-makerspace.EMG-ble-kth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "EMG-ble-kth/EMG-ble-kth.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EMG-ble-kth/Preview Content\"";
@@ -479,6 +484,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "kth-flemingsberg-makerspace.EMG-ble-kth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
